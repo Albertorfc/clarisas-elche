@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clarisas de Elche</title>
   <style>
     body {
@@ -11,41 +11,53 @@
       background-color: #fdfdfb;
       color: #333;
     }
-    header {
+    header, footer {
       background-color: #e0d7c6;
-      padding: 2rem;
       text-align: center;
+      padding: 1.5rem;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
     nav {
-      background: #cbb89d;
-      padding: 1rem;
+      background-color: #cbb89d;
       text-align: center;
+      padding: 1rem;
     }
     nav a {
-      color: #fff;
+      color: white;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
     section {
-      padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 2rem 1rem;
     }
     img {
       max-width: 100%;
-      border-radius: 10px;
+      border-radius: 8px;
       margin: 1rem 0;
     }
-    footer {
-      background: #e0d7c6;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -61,42 +73,73 @@
     <a href="#vida">Vida diaria</a>
     <a href="#trabajo">Trabajo</a>
     <a href="#curiosidades">Curiosidades</a>
-    <a href="#galeria">Galería</a>
+    <a href="#oraciones">Oraciones</a>
+    <a href="#visitas">Dónde estamos</a>
+    <a href="#colaborar">Cómo colaborar</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 
   <section id="quienes">
     <h2>¿Quiénes somos?</h2>
-    <p>Las Hermanas Clarisas somos una comunidad de vida contemplativa fundada por Santa Clara de Asís, siguiendo el ejemplo de San Francisco. Dedicamos nuestra vida a la oración, el silencio y el amor a la Eucaristía.</p>
-    <img src="https://commons.wikimedia.org/wiki/File:Antoni_Viladomat_-_Saint_Francis_and_Saint_Clare_at_Supper_in_the_Convent_of_Saint_Damian_-_Google_Art_Project.jpg" alt="Santa Clara y San Paco comiendo">
+    <p>Las Hermanas Clarisas vivimos una vida de oración y contemplación, siguiendo la espiritualidad de Santa Clara y San Francisco de Asís.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Santa_Clara_de_As%C3%ADs%2C_atribuido_a_Alejo_Fern%C3%A1ndez_%28Museo_L%C3%A1zaro_Galdiano%2C_Madrid%29.jpg" alt="Santa Clara de Asís">
   </section>
 
   <section id="historia">
     <h2>Historia en Elche</h2>
-    <p>Desde hace siglos, las Clarisas han formado parte del alma espiritual de Elche. El convento actual de Santa Clara es un testimonio de fe y tradición viva.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Convento_Santa_Clara_-_Elche.jpg/640px-Convento_Santa_Clara_-_Elche.jpg" alt="Convento de Santa Clara en Elche">
+    <p>Presencia centenaria en Elche, cultivando la fe desde el silencio del convento.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Convento_de_Santa_Clara%2C_Cu%C3%A9llar_01.jpg" alt="Convento Santa Clara">
   </section>
 
   <section id="vida">
     <h2>Vida diaria</h2>
-    <p>Oramos en comunidad, trabajamos con nuestras manos, y vivimos en comunión fraterna. Nuestra jornada gira en torno a la liturgia y la adoración del Santísimo Sacramento.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Monjas_Clarisas_-_oracion.jpg" alt="Clarisas en oración">
+    <p>Oración, trabajo y vida fraterna definen nuestro día a día. La adoración eucarística es el centro de todo.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Santa_monja_en_oraci%C3%B3n%2C_de_Sebasti%C3%A1n_de_Llanos_y_Vald%C3%A9s_%28Museo_L%C3%A1zaro_Galdiano%2C_Madrid%29.jpg" alt="Monja en oración">
   </section>
 
   <section id="trabajo">
     <h2>Nuestro trabajo</h2>
-    <p>Para nuestro sustento elaboramos formas para la Eucaristía, dulces artesanales, y ofrecemos pequeños arreglos litúrgicos. Nuestro trabajo es también oración.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Formas_eucaristicas.jpg/640px-Formas_eucaristicas.jpg" alt="Formas eucarísticas">
+    <p>Elaboramos formas para la Eucaristía, dulces y pequeños arreglos litúrgicos con amor y recogimiento.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Jos%C3%A9_Te%C3%B3filo_de_Jesus_-_Jesus_institui_a_Eucaristia_-_vers%C3%A3o_restaurada_digitalmente.jpg" alt="Institución de la Eucaristía">
   </section>
 
   <section id="curiosidades">
     <h2>Curiosidades</h2>
-    <p>¿Sabías que Santa Clara protegió a sus hermanas con la Eucaristía durante un ataque? Las Clarisas mantienen viva esa fe poderosa aún hoy en día en Elche.</p>
+    <p>Santa Clara es conocida por proteger a sus hermanas con el poder de la Eucaristía durante un ataque. Su fe vive hoy en Elche.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Imposici%C3%B3n_del_h%C3%A1bito_a_Santa_Clara_de_As%C3%ADs%2C_Juan_Mart%C3%ADnez_Monta%C3%B1%C3%A9s.jpg" alt="Santa Clara recibiendo el hábito">
   </section>
 
-  <section id="galeria">
-    <h2>Galería</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/San_Francisco_y_Santa_Clara.jpg/800px-San_Francisco_y_Santa_Clara.jpg" alt="San Francisco y Santa Clara">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Palmeraie_Elche_2006.jpg/640px-Palmeraie_Elche_2006.jpg" alt="Palmeral de Elche">
+  <section id="oraciones">
+    <h2>Oraciones</h2>
+    <p>Te invitamos a orar con nosotras:</p>
+    <ul>
+      <li>Ofrecimiento del día</li>
+      <li>Oración a Santa Clara</li>
+      <li>Adoración Eucarística</li>
+    </ul>
+  </section>
+
+  <section id="visitas">
+    <h2>Dónde estamos</h2>
+    <p>Convento de Santa Clara, Elche (Alicante, España)</p>
+    <p><strong>Horario de misas:</strong> 8:00h (diaria), 11:00h (domingos)</p>
+    <p><strong>Locutorio:</strong> de 10:00 a 13:00h y de 16:00 a 18:00h</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Palmeral%2C_Elche%2C_Espa%C3%B1a%2C_2014-07-05%2C_DD_23.JPG" alt="Palmeral de Elche">
+  </section>
+
+  <section id="colaborar">
+    <h2>Cómo colaborar</h2>
+    <p>Puedes colaborar encargando dulces, haciendo donativos, o simplemente con tu oración.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>

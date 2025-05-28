@@ -1,31 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clarisas de Elche</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f6f4f0;
+      color: #333;
+    }
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Convento_Santa_Clara_-_Elche.jpg/1200px-Convento_Santa_Clara_-_Elche.jpg') no-repeat center center;
+      background-size: cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    nav {
+      background-color: #a08966;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .intro img {
+      max-width: 300px;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #e0d7c6;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Hermanas Clarisas de Elche</h1>
-    <p>"Paz y bien" desde el Convento de Santa Clara</p>
+    <p>Convento de Santa Clara – Siguiendo la luz de Santa Clara de Asís</p>
   </header>
 
   <nav>
-    <a href="sections/quienes.html">¿Quiénes somos?</a>
-    <a href="sections/historia.html">Historia</a>
-    <a href="sections/vida.html">Vida diaria</a>
-    <a href="sections/trabajo.html">Trabajo</a>
-    <a href="sections/curiosidades.html">Curiosidades</a>
-    <a href="sections/oraciones.html">Oraciones</a>
-    <a href="sections/visitas.html">Dónde estamos</a>
-    <a href="sections/colaborar.html">Cómo colaborar</a>
-    <a href="sections/contacto.html">Contacto</a>
+    <a href="#quienes">¿Quiénes somos?</a>
+    <a href="#historia">Historia</a>
+    <a href="#vida">Vida diaria</a>
+    <a href="#trabajo">Trabajo</a>
+    <a href="#oraciones">Oraciones</a>
+    <a href="#colaborar">Cómo colaborar</a>
+    <a href="#visitas">Visítanos</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 
+  <section class="intro" id="quienes">
+    <h2>Bienvenidos a nuestro hogar de paz</h2>
+    <p>Somos las Hermanas Clarisas del convento de Santa Clara de Elche. Una comunidad de vida contemplativa en el corazón de esta ciudad, entregadas a la oración, la fraternidad y la adoración eucarística.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Saint_Clare.jpg/440px-Saint_Clare.jpg" alt="Santa Clara de Asís">
+  </section>
+
+  <section class="intro">
+    <h2>Nuestro escudo</h2>
+    <p>El escudo de la Orden de Santa Clara refleja la sencillez, la pureza y la fe que nos guían.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Emblema_Orden_de_Santa_Clara.png/480px-Emblema_Orden_de_Santa_Clara.png" alt="Escudo de la Orden de Santa Clara">
+  </section>
+
   <footer>
-    &copy; 2025 Hermanas Clarisas de Elche - Convento de Santa Clara
+    &copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara
   </footer>
 </body>
 </html>

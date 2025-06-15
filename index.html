@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clarisas de Elche</title>
+  <style>
+    body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; color: #333; }
+    header {
+      background: url('imagenes/santa-clara-francisco.png') no-repeat center center;
+      background-size: cover;
+      color: white;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-shadow: 0 0 8px rgba(0,0,0,0.7);
+      padding: 2rem;
+    }
+    header h1 { font-size: 2.5rem; margin: 0.5rem 0; }
+    header p { margin: 0; font-size: 1.2rem; }
+
+    nav { background-color: #a08966; }
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #a08966;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid #d9c8b3;
+    }
+    .menu-toggle {
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: white;
+      cursor: pointer;
+    }
+    .nav-links.show { display: flex; }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .column {
+      flex: 1;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    footer {
+      background-color: #e0d7c6;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    @media(min-width: 768px) {
+      .row { flex-direction: row; }
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+      }
+      .nav-links a { border-top: none; }
+      .menu-toggle { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hermanas Pobres de Santa Clara</h1>
+    <p>Monasterio de Santa Clara de Elche</p>
+    <p>Viviendo el carisma de Santa Clara de Asís en Elche desde 1516</p>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+      <div class="nav-links">
+        <a href="#">Santa Clara</a>
+        <a href="#">Nuestra Vocación</a>
+        <a href="#">En Elche</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="row">
+      <div class="column">
+        <h2>Santa Clara</h2>
+        <p>Santa Clara de Asís fue una mujer valiente que respondió al llamado de Dios en un tiempo en que se esperaba de ella otro camino. Fundó una nueva forma de vida consagrada centrada en la pobreza radical y la oración. Su vida sigue iluminando el corazón de muchas mujeres que buscan seguir a Cristo.</p>
+        <img src="imagenes/simone-martini.jpg" alt="Santa Clara">
+      </div>
+      <div class="column">
+        <h2>Cruz de San Damián</h2>
+        <p>Ante esta cruz, San Francisco escuchó la llamada del Señor: “Reconstruye mi Iglesia”. Santa Clara también rezó muchas veces ante esta imagen. Es símbolo de obediencia, entrega y confianza absoluta en Dios.</p>
+        <img src="imagenes/cruz-san-damian.gif" alt="Cruz de San Damián">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara
+  </footer>
+</body>
+</html>

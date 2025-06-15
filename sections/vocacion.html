@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vocación Clarisa</title>
+  <style>
+    body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; color: #333; }
+    header, footer { background-color: #e0d7c6; text-align: center; padding: 1.5rem; }
+    nav { background-color: #a08966; }
+    .nav-container {
+      max-width: 1000px; margin: auto;
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 0.5rem 1rem;
+    }
+    .nav-links {
+      display: none; flex-direction: column;
+      background-color: #a08966;
+    }
+    .nav-links a {
+      color: white; text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid #d9c8b3;
+    }
+    .menu-toggle {
+      background: none; border: none;
+      font-size: 1.8rem; color: white;
+      cursor: pointer;
+    }
+    .nav-links.show { display: flex; }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .column {
+      flex: 1;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    @media(min-width: 768px) {
+      .row { flex-direction: row; }
+      .nav-links { display: flex; flex-direction: row; }
+      .nav-links a { border-top: none; }
+      .menu-toggle { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vocación Clarisa</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+      <div class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="santa-clara.html">Santa Clara</a>
+        <a href="hermanas-pobres.html">Hermanas Pobres</a>
+        <a href="vocacion.html">Vocación Clarisa</a>
+        <a href="en-elche.html">En Elche</a>
+        <a href="oraciones.html">Oraciones</a>
+        <a href="tercera-orden.html">Tercera Orden</a>
+        <a href="colabora.html">Colabora</a>
+        <a href="visitanos.html">Visítanos</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="row">
+      <div class="column">
+        <h2>Eucaristía diaria</h2>
+        <p>La jornada de la clarisa tiene su punto culminante en la Santa Misa, donde se alimenta del Cuerpo de Cristo y ofrece su día por la salvación del mundo.</p>
+        <h2>Oración y adoración</h2>
+        <p>La clarisa dedica muchas horas a la oración personal y comunitaria, especialmente en la adoración silenciosa ante el Santísimo Sacramento.</p>
+      </div>
+      <div class="column">
+        <h2>Pobreza evangélica</h2>
+        <p>Como Clara, las hermanas renuncian a toda posesión para vivir en total dependencia de Dios y fraternidad, sosteniéndose con su trabajo y la Providencia.</p>
+        <h2>Vida en fraternidad</h2>
+        <p>La comunidad es el corazón de la vocación clarisa. Se vive en sencillez, caridad y escucha, y también en el locutorio, donde se acoge y acompaña a los hermanos que buscan consejo o consuelo.</p>
+      </div>
+    </div>
+    <img src="../imagenes/vocacion-clarisa-collage.png" alt="Aspectos de la vocación clarisa">
+  </section>
+
+  <footer>
+    &copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara
+  </footer>
+</body>
+</html>

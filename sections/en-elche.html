@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Historia en Elche</title>
+  <title>Historia de las Clarisas en Elche</title>
   <style>
     body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; color: #333; }
     header, footer { background-color: #e0d7c6; text-align: center; padding: 1.5rem; }
@@ -33,12 +33,15 @@
       margin: auto;
       padding: 2rem 1rem;
     }
+    .row { display: flex; flex-direction: column; gap: 2rem; }
+    .column { flex: 1; }
     img {
       max-width: 100%;
       border-radius: 12px;
       margin: 1rem 0;
     }
     @media(min-width: 768px) {
+      .row { flex-direction: row; }
       .nav-links { display: flex; flex-direction: row; }
       .nav-links a { border-top: none; }
       .menu-toggle { display: none; }
@@ -47,7 +50,7 @@
 </head>
 <body>
   <header>
-    <h1>Historia del convento en Elche</h1>
+    <h1>Historia de la comunidad clarisa en Elche</h1>
   </header>
 
   <nav>
@@ -68,23 +71,27 @@
   </nav>
 
   <section>
-    <h2>Fundación en Elche</h2>
-    <p>Las Clarisas llegaron a Elche en 1516, cuando Fray Esteban de Olmos y Doña María Ruiz impulsaron la creación del primer monasterio bajo el patrocinio de Santa Clara. Su establecimiento marcó el inicio de una presencia constante y orante en la ciudad.</p>
-    <p>El primer convento se ubicó en el edificio conocido como la Encarnación, que fue adaptado para albergar la vida comunitaria de las hermanas.</p>
-    <img src="../imagenes/convento-encarnacion.jpg" alt="Antiguo Convento de la Encarnación" />
+    <div class="row">
+      <div class="column">
+        <h2>Primer convento: la Encarnación</h2>
+        <p>En 1516 se fundó la primera comunidad clarisa en Elche, ubicada en el antiguo convento de la Encarnación, en el lugar que hoy ocupa la Glorieta. Fue una fundación de origen diocesano, promovida por clérigos y fieles ilicitanos, con el permiso del obispo de Orihuela. Desde allí, las hermanas iniciaron su vida contemplativa, ganándose el aprecio del pueblo.</p>
+        <img src="../imagenes/convento-encarnacion.jpg" alt="Antiguo convento de la Encarnación" />
 
-    <h2>Traslado al Convento de la Merced</h2>
-    <p>Durante el siglo XVII, debido al crecimiento de la comunidad, las hermanas se trasladaron al antiguo convento de la Merced. Este edificio histórico, ubicado cerca del centro, acogió a las Clarisas durante más de tres siglos.</p>
-    <img src="../imagenes/convento-merced-1.jpg" alt="Fachada del convento de la Merced" />
-    <img src="../imagenes/convento-merced-2.jpg" alt="Interior del convento de la Merced" />
+        <h2>Traslado al convento de la Merced</h2>
+        <p>En el siglo XVII, la comunidad se trasladó al convento de la Merced, que había quedado desocupado por los mercedarios. Allí permanecieron durante más de 250 años. El edificio contaba con iglesia propia, que fue muy frecuentada por los fieles. Lamentablemente, esta iglesia fue derribada en el siglo XX, tras la exclaustración y expropiación de parte del inmueble.</p>
+        <img src="../imagenes/convento-merced-1.jpg" alt="Fachada del convento de la Merced" />
+        <img src="../imagenes/convento-merced-2.jpg" alt="Interior del convento de la Merced" />
+      </div>
+      <div class="column">
+        <h2>Actual convento de Santa Clara</h2>
+        <p>En los años 80, las Clarisas se trasladaron a un nuevo convento construido expresamente para ellas. Situado en una zona más tranquila, este nuevo monasterio favorece la clausura y la oración. Conserva el espíritu franciscano de sencillez, y ha sido ampliado con una iglesia abierta al público para facilitar la participación litúrgica.</p>
+        <img src="../imagenes/convento-santa-clara.jpg" alt="Convento actual de Santa Clara" />
 
-    <h2>Actual Convento de Santa Clara</h2>
-    <p>En el siglo XX, por motivos de conservación y adecuación, se decidió construir un nuevo convento. El actual monasterio de Santa Clara se ubica en un entorno más silencioso, favoreciendo la vida contemplativa. Fue inaugurado en la década de 1970 y continúa siendo casa de oración y fraternidad.</p>
-    <img src="../imagenes/convento-santa-clara.jpg" alt="Convento actual de Santa Clara" />
-
-    <h2>La comunidad hoy</h2>
-    <p>Las hermanas continúan su vida de oración, silencio, trabajo y acogida fraterna en Elche. La comunidad actual está formada por mujeres de distintas edades que dedican su vida al seguimiento de Cristo en pobreza y fraternidad. Su testimonio discreto sigue siendo una bendición para la ciudad.</p>
-    <img src="../imagenes/comunidad-actual.jpg" alt="Comunidad actual de Clarisas en Elche" />
+        <h2>La comunidad hoy</h2>
+        <p>Actualmente, la comunidad clarisa continúa su vida de oración, silencio, adoración eucarística y fraternidad. En contacto con la ciudad, acogen a quienes se acercan con necesidades espirituales. Su presencia sigue siendo testimonio de vida evangélica en el corazón de Elche.</p>
+        <img src="../imagenes/comunidad-actual.jpg" alt="Comunidad actual de Clarisas en Elche" />
+      </div>
+    </div>
   </section>
 
   <footer>

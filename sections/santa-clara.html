@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Santa Clara de Asís</title>
+  <style>
+    body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; color: #333; }
+    header, footer { background-color: #e0d7c6; text-align: center; padding: 1.5rem; }
+    nav { background-color: #a08966; }
+    .nav-container {
+      max-width: 1000px; margin: auto;
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 0.5rem 1rem;
+    }
+    .nav-links {
+      display: none; flex-direction: column;
+      background-color: #a08966;
+    }
+    .nav-links a {
+      color: white; text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid #d9c8b3;
+    }
+    .menu-toggle {
+      background: none; border: none;
+      font-size: 1.8rem; color: white;
+      cursor: pointer;
+    }
+    .nav-links.show { display: flex; }
+    section {
+      max-width: 1000px; margin: auto;
+      padding: 2rem 1rem;
+    }
+    img {
+      max-width: 100%;
+      margin: 1rem 0;
+      border-radius: 12px;
+    }
+    @media(min-width: 768px) {
+      .nav-links { display: flex; flex-direction: row; }
+      .nav-links a { border-top: none; }
+      .menu-toggle { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Santa Clara de Asís</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+      <div class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="santa-clara.html">Santa Clara</a>
+        <a href="hermanas-pobres.html">Hermanas Pobres</a>
+        <a href="vocacion.html">Vocación Clarisa</a>
+        <a href="en-elche.html">En Elche</a>
+        <a href="oraciones.html">Oraciones</a>
+        <a href="tercera-orden.html">Tercera Orden</a>
+        <a href="colabora.html">Colabora</a>
+        <a href="visitanos.html">Visítanos</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <p><strong>Santa Clara de Asís</strong> nació en 1193 en el seno de una familia noble. Desde pequeña destacó por su sensibilidad espiritual y su deseo de seguir a Cristo. Su vida cambió para siempre al escuchar predicar a <strong>San Francisco de Asís</strong>, con quien inició un profundo camino de fraternidad espiritual.</p>
+
+    <p>El Domingo de Ramos de 1212, Clara abandonó su hogar y consagró su vida a Dios. Recibió el hábito de manos de Francisco en la Porciúncula, marcando el inicio de la <em>Orden de las Hermanas Pobres</em>, hoy conocidas como Clarisas.</p>
+
+    <img src="../imagenes/santa-clara-icono.jpg" alt="Santa Clara icono devocional" />
+
+    <p>Desde el convento de San Damián, llevó una vida de oración, pobreza radical y servicio. Su espiritualidad estaba profundamente centrada en <strong>Jesucristo pobre y crucificado</strong>, y tenía una devoción encendida hacia el <strong>Santísimo Sacramento</strong>.</p>
+
+    <img src="../imagenes/santa-clara-lirios.jpg" alt="Santa Clara con lirios y halo dorado" />
+
+    <p>Se cuentan numerosas vivencias místicas, como la vez que, estando enferma, pudo asistir a la misa en espíritu, viendo en una visión el altar y la consagración desde su lecho. Esta experiencia fue tan real y viva que el Papa Pío XII la proclamó <em>patrona de la televisión</em> en 1958.</p>
+
+    <p>Clara escribió su propia regla, la primera compuesta por una mujer y aprobada por la Iglesia en 1253. Falleció el 11 de agosto de ese mismo año, poco después de ver confirmada su regla por el Papa Inocencio IV.</p>
+
+    <img src="../imagenes/santa-clara-relicario.jpeg" alt="Cuerpo de Santa Clara en Asís" />
+
+    <p>Su cuerpo reposa en la Basílica de Santa Clara en Asís, donde miles de peregrinos acuden cada año para venerar su testimonio de vida radicalmente evangélica.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara
+  </footer>
+</body>
+</html>

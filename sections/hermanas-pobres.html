@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hermanas Pobres</title>
+  <style>
+    body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; color: #333; }
+    header, footer { background-color: #e0d7c6; text-align: center; padding: 1.5rem; }
+    nav { background-color: #a08966; }
+    .nav-container {
+      max-width: 1000px; margin: auto;
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 0.5rem 1rem;
+    }
+    .nav-links {
+      display: none; flex-direction: column;
+      background-color: #a08966;
+    }
+    .nav-links a {
+      color: white; text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid #d9c8b3;
+    }
+    .menu-toggle {
+      background: none; border: none;
+      font-size: 1.8rem; color: white;
+      cursor: pointer;
+    }
+    .nav-links.show { display: flex; }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .column {
+      flex: 1;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    @media(min-width: 768px) {
+      .row { flex-direction: row; }
+      .nav-links { display: flex; flex-direction: row; }
+      .nav-links a { border-top: none; }
+      .menu-toggle { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Las Hermanas Pobres de Santa Clara</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+      <div class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="santa-clara.html">Santa Clara</a>
+        <a href="hermanas-pobres.html">Hermanas Pobres</a>
+        <a href="vocacion.html">Vocación Clarisa</a>
+        <a href="en-elche.html">En Elche</a>
+        <a href="oraciones.html">Oraciones</a>
+        <a href="tercera-orden.html">Tercera Orden</a>
+        <a href="colabora.html">Colabora</a>
+        <a href="visitanos.html">Visítanos</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="row">
+      <div class="column">
+        <p>Las Hermanas Pobres, conocidas como Clarisas, fueron fundadas por Santa Clara en 1212 con el aliento de San Francisco. La primera comunidad se estableció en San Damián, a las afueras de Asís, donde Clara vivió y murió.</p>
+        <img src="../imagenes/san-damiano-exterior.jpg" alt="Convento de San Damián" />
+        <p>El primer texto normativo fue una fórmula de vida escrita por Francisco. Pero años después, Clara redactó su propia Regla, basada en la vida evangélica y la pobreza total, que fue aprobada por el papa Inocencio IV en 1253.</p>
+        <img src="../imagenes/regla-clara-azulejo.png" alt="Azulejo: Regla de Clara" />
+      </div>
+      <div class="column">
+        <p>El hábito franciscano se caracteriza por su sencillez: túnica marrón, cinturón de cuerda, velo y sandalias. Este símbolo de humildad une a las hermanas en fraternidad y obediencia.</p>
+        <img src="../imagenes/habito-clarisas.png" alt="Hábito de las clarisas" />
+        <p>A lo largo de los siglos, muchas Hermanas Pobres han sido canonizadas: Santa Coleta, Santa Inés de Praga, Santa Catalina de Bolonia... Sus vidas son reflejo de la luz de Clara en la Iglesia.</p>
+        <img src="../imagenes/altar-reliquias-clarisas.jpg" alt="Altar de reliquias de clarisas" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara
+  </footer>
+</body>
+</html>

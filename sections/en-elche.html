@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historia en Elche</title>
+  <style>
+    body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; color: #333; }
+    header, footer { background-color: #e0d7c6; text-align: center; padding: 1.5rem; }
+    nav { background-color: #a08966; }
+    .nav-container {
+      max-width: 1000px; margin: auto;
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 0.5rem 1rem;
+    }
+    .nav-links {
+      display: none; flex-direction: column;
+      background-color: #a08966;
+    }
+    .nav-links a {
+      color: white; text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-top: 1px solid #d9c8b3;
+    }
+    .menu-toggle {
+      background: none; border: none;
+      font-size: 1.8rem; color: white;
+      cursor: pointer;
+    }
+    .nav-links.show { display: flex; }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+    @media(min-width: 768px) {
+      .nav-links { display: flex; flex-direction: row; }
+      .nav-links a { border-top: none; }
+      .menu-toggle { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Historia del convento en Elche</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+      <div class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="santa-clara.html">Santa Clara</a>
+        <a href="hermanas-pobres.html">Hermanas Pobres</a>
+        <a href="vocacion.html">Vocación Clarisa</a>
+        <a href="en-elche.html">En Elche</a>
+        <a href="oraciones.html">Oraciones</a>
+        <a href="tercera-orden.html">Tercera Orden</a>
+        <a href="colabora.html">Colabora</a>
+        <a href="visitanos.html">Visítanos</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <h2>Fundación en Elche</h2>
+    <p>Las Clarisas llegaron a Elche en 1516, cuando Fray Esteban de Olmos y Doña María Ruiz impulsaron la creación del primer monasterio bajo el patrocinio de Santa Clara. Su establecimiento marcó el inicio de una presencia constante y orante en la ciudad.</p>
+    <p>El primer convento se ubicó en el edificio conocido como la Encarnación, que fue adaptado para albergar la vida comunitaria de las hermanas.</p>
+    <img src="../imagenes/convento-encarnacion.jpg" alt="Antiguo Convento de la Encarnación" />
+
+    <h2>Traslado al Convento de la Merced</h2>
+    <p>Durante el siglo XVII, debido al crecimiento de la comunidad, las hermanas se trasladaron al antiguo convento de la Merced. Este edificio histórico, ubicado cerca del centro, acogió a las Clarisas durante más de tres siglos.</p>
+    <img src="../imagenes/convento-merced-1.jpg" alt="Fachada del convento de la Merced" />
+    <img src="../imagenes/convento-merced-2.jpg" alt="Interior del convento de la Merced" />
+
+    <h2>Actual Convento de Santa Clara</h2>
+    <p>En el siglo XX, por motivos de conservación y adecuación, se decidió construir un nuevo convento. El actual monasterio de Santa Clara se ubica en un entorno más silencioso, favoreciendo la vida contemplativa. Fue inaugurado en la década de 1970 y continúa siendo casa de oración y fraternidad.</p>
+    <img src="../imagenes/convento-santa-clara.jpg" alt="Convento actual de Santa Clara" />
+
+    <h2>La comunidad hoy</h2>
+    <p>Las hermanas continúan su vida de oración, silencio, trabajo y acogida fraterna en Elche. La comunidad actual está formada por mujeres de distintas edades que dedican su vida al seguimiento de Cristo en pobreza y fraternidad. Su testimonio discreto sigue siendo una bendición para la ciudad.</p>
+    <img src="../imagenes/comunidad-actual.jpg" alt="Comunidad actual de Clarisas en Elche" />
+  </section>
+
+  <footer>
+    &copy; 2025 Hermanas Clarisas de Elche – Convento de Santa Clara
+  </footer>
+</body>
+</html>

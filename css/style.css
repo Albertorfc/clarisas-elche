@@ -102,12 +102,6 @@ body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; colo
       max-width: 100%;
       border-radius: 12px;
     }
-    footer {
-      background-color: #e0d7c6;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
     @media(min-width: 768px) {
       .row { flex-direction: row; }
       .nav-links {
@@ -169,6 +163,8 @@ body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; colo
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+
+
 header {
   background: url('imagenes/santa-clara-francisco.png') no-repeat center center;
   background-size: cover;
@@ -181,4 +177,11 @@ header {
   text-align: center;
   text-shadow: 0 0 8px rgba(0,0,0,0.7);
   padding: 2rem;
+}
+
+footer {
+  background-color: #e0d7c6;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }

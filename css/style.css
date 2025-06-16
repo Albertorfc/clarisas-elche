@@ -166,7 +166,7 @@ body { margin: 0; font-family: 'Georgia', serif; background-color: #fdfaf5; colo
 
 
 header {
-  background: url('imagenes/santa-clara-francisco.png') no-repeat center center;
+  background: url('../imagenes/santa-clara-francisco.png') no-repeat center center;
   background-size: cover;
   color: white;
   height: 60vh;
